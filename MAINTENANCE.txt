@@ -1,0 +1,20 @@
+KikiDub 月度封面配置维护
+
+`monthly-album-covers.json` 由 KikiDub 的月历入口、唱片标签和报告首图共用。它是手动维护的静态配置，现有每日成长内容自动任务不会生成或修改它。支持此能力的 App 发布后，调整已有模板内的封面无需再发 App 版本。
+
+- `schema_version` 当前为 `1`；每次修改更新 `revision`，例如 `2026-11-01.1`。
+- `covers` 的键为完整年月 `YYYY-MM`，例如 `2026-11`，避免翌年误用旧设计。新增月份时复制一个月的完整配置再调整。
+- `motif` 只接受 `sprout`（新芽）、`echo`（回声）、`orbit`（圆弧）、`ribbon`（飘带）。新绘图/动效类型需要 App 增加支持。
+- `palette` 使用六位十六进制色值，不带 `#`：`background`、`ink`、`first_digit`、`accent`。沿用 KikiDub 品牌色板。
+- `first_digit_frame`、`second_digit_frame`、`mascot_frame` 的 `x/y/width/height` 相对正方形封面归一化；位置范围 `-0.15...1`，宽高范围 `0.05...1.2`，允许少量裁切。`zero_thickness` 范围 `0.03...0.35`。
+- 配置不包含月份数字或标题文案：数字始终由 App 根据实际年月生成，标题由 App 本地化，角色与数字仍是独立原生层。
+
+在相邻 App 仓库运行实际客户端校验后，再发布这个文件：
+
+```bash
+cd ../kiki-dub-main
+swiftc -swift-version 5 KikiDub/Core/Models/ReportMonth.swift KikiDub/Core/Models/MonthlyAlbumCoverCatalog.swift KikiDub/Core/MonthlyAlbumCoverRepository.swift tools/monthly_album/check_monthly_album.swift -o /tmp/kiki-check-monthly-album
+/tmp/kiki-check-monthly-album ../kikidub-monthly-covers/monthly-album-covers.json
+```
+
+文件须由拥有本仓库写入权限的账号提交到 `main`。App 从固定地址 `https://raw.githubusercontent.com/zhizuzhefu/kikidub-monthly-covers/main/monthly-album-covers.json` 读取，成功后当天不再刷新，失败重试至少间隔五分钟；内容传播可能有延迟，不保证所有设备立即切换。断网/404/无效配置保留上次有效缓存；没有缓存或没有相应年月时使用内置封面。回退发布可恢复之前的文件；发布合法的空 `covers` 对象则让已收到更新的客户端恢复内置封面。
