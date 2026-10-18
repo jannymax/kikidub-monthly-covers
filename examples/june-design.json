@@ -1,0 +1,87 @@
+{
+  "background": "0040E8",
+  "label_ink": "FFD302",
+  "layers": [
+    {
+      "id": "zero",
+      "frame": {
+        "x": 0.045,
+        "y": 0.045,
+        "width": 0.42,
+        "height": 0.49
+      },
+      "file": "../assets/2026-06/062cac0a653dc4c58837aa52c9eccfb956b595efeffbf9317340a85ff50f9993-zero.png"
+    },
+    {
+      "id": "six",
+      "frame": {
+        "x": 0.4,
+        "y": 0.2,
+        "width": 0.58,
+        "height": 0.79
+      },
+      "file": "../assets/2026-06/87afdc5cf5727cc898edbbbabd96d8a8cf968b1eee983c809256cefd8ee8bdf4-six.png"
+    },
+    {
+      "id": "disc",
+      "frame": {
+        "x": 0.7,
+        "y": 0.61,
+        "width": 0.15,
+        "height": 0.15
+      },
+      "motion": {
+        "type": "float",
+        "amount": 0.012
+      },
+      "file": "../assets/2026-06/cc1d325a09830067856f26fcfcd11bd8a87e190153223b715f416db9dc26d395-disc.png"
+    },
+    {
+      "id": "echoes",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      },
+      "motion": {
+        "type": "pulse",
+        "amount": 0.016,
+        "anchor": {
+          "x": 0.7,
+          "y": 0.67
+        }
+      },
+      "file": "../assets/2026-06/2e726fdd419e76dcb4e355c95c80f311d6be6026f68a4e71dc88037a520a257d-echoes.png"
+    },
+    {
+      "id": "kiki",
+      "frame": {
+        "x": 0.65,
+        "y": 0.68,
+        "width": 0.15,
+        "height": 0.15
+      },
+      "motion": {
+        "type": "float",
+        "amount": 0.006
+      },
+      "file": "../assets/2026-06/420a253ee6a6e67e90bedf08219af9309eeba0354340eee619d7358d11a967f0-kiki.png"
+    },
+    {
+      "id": "eyes",
+      "frame": {
+        "x": 0.698,
+        "y": 0.7625,
+        "width": 0.0486,
+        "height": 0.0165
+      },
+      "motion": {
+        "type": "float",
+        "amount": 0.006
+      },
+      "blinks": true,
+      "file": "../assets/2026-06/793574bd85dc762e3a4582dae7c735eab9b1c5ee69a4d88be733ace8df5bda38-eyes.png"
+    }
+  ]
+}
