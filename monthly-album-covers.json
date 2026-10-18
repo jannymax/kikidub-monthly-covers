@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "revision": "2026-10-18.1",
+  "covers": {
+    "2026-05": {
+      "motif": "sprout",
+      "palette": {
+        "background": "FFFFFF",
+        "ink": "99D829",
+        "first_digit": "02883F",
+        "accent": "02883F"
+      },
+      "first_digit_frame": {
+        "x": 0.025,
+        "y": 0.025,
+        "width": 0.5,
+        "height": 0.66
+      },
+      "second_digit_frame": {
+        "x": 0.4,
+        "y": 0.28,
+        "width": 0.64,
+        "height": 0.8
+      },
+      "mascot_frame": {
+        "x": 0.19,
+        "y": 0.46,
+        "width": 0.16,
+        "height": 0.16
+      },
+      "zero_thickness": 0.205
+    },
+    "2026-06": {
+      "motif": "echo",
+      "palette": {
+        "background": "0040E8",
+        "ink": "FFD302",
+        "first_digit": "FFD302",
+        "accent": "FF7C00"
+      },
+      "first_digit_frame": {
+        "x": 0.045,
+        "y": 0.045,
+        "width": 0.42,
+        "height": 0.49
+      },
+      "second_digit_frame": {
+        "x": 0.4,
+        "y": 0.2,
+        "width": 0.58,
+        "height": 0.79
+      },
+      "mascot_frame": {
+        "x": 0.65,
+        "y": 0.68,
+        "width": 0.15,
+        "height": 0.15
+      },
+      "zero_thickness": 0.065
+    },
+    "2026-07": {
+      "motif": "orbit",
+      "palette": {
+        "background": "ABACFE",
+        "ink": "0040E8",
+        "first_digit": "0040E8",
+        "accent": "FFD302"
+      },
+      "first_digit_frame": {
+        "x": 0.04,
+        "y": 0.045,
+        "width": 0.49,
+        "height": 0.62
+      },
+      "second_digit_frame": {
+        "x": 0.49,
+        "y": 0.43,
+        "width": 0.53,
+        "height": 0.66
+      },
+      "mascot_frame": {
+        "x": 0.57,
+        "y": 0.31,
+        "width": 0.15,
+        "height": 0.15
+      },
+      "zero_thickness": 0.205
+    },
+    "2026-08": {
+      "motif": "ribbon",
+      "palette": {
+        "background": "FEA1CD",
+        "ink": "0040E8",
+        "first_digit": "0040E8",
+        "accent": "F21212"
+      },
+      "first_digit_frame": {
+        "x": 0.045,
+        "y": 0.045,
+        "width": 0.42,
+        "height": 0.49
+      },
+      "second_digit_frame": {
+        "x": 0.43,
+        "y": 0.19,
+        "width": 0.54,
+        "height": 0.8
+      },
+      "mascot_frame": {
+        "x": 0.64,
+        "y": 0.35,
+        "width": 0.15,
+        "height": 0.15
+      },
+      "zero_thickness": 0.065
+    },
+    "2026-09": {
+      "motif": "orbit",
+      "palette": {
+        "background": "550FEC",
+        "ink": "ABACFE",
+        "first_digit": "ABACFE",
+        "accent": "FFD302"
+      },
+      "first_digit_frame": {
+        "x": 0.04,
+        "y": 0.045,
+        "width": 0.49,
+        "height": 0.62
+      },
+      "second_digit_frame": {
+        "x": 0.45,
+        "y": 0.2,
+        "width": 0.52,
+        "height": 0.8
+      },
+      "mascot_frame": {
+        "x": 0.18,
+        "y": 0.49,
+        "width": 0.15,
+        "height": 0.15
+      },
+      "zero_thickness": 0.205
+    },
+    "2026-10": {
+      "motif": "orbit",
+      "palette": {
+        "background": "FFD302",
+        "ink": "131313",
+        "first_digit": "131313",
+        "accent": "FF7C00"
+      },
+      "first_digit_frame": {
+        "x": 0.045,
+        "y": 0.035,
+        "width": 0.34,
+        "height": 0.66
+      },
+      "second_digit_frame": {
+        "x": 0.39,
+        "y": 0.3,
+        "width": 0.57,
+        "height": 0.67
+      },
+      "mascot_frame": {
+        "x": 0.61,
+        "y": 0.72,
+        "width": 0.15,
+        "height": 0.15
+      },
+      "zero_thickness": 0.205
+    }
+  }
+}
