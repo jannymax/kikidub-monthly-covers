@@ -41,7 +41,7 @@ covers 中每项包含 motif（sprout/echo/orbit/ribbon）、palette（backgroun
 
 四、更新、缓存和回退
 
-固定目录地址：https://raw.githubusercontent.com/zhizuzhefu/kikidub-monthly-covers/main/monthly-album-covers.json
+固定目录地址：https://raw.githubusercontent.com/jannymax/kikidub-monthly-covers/main/monthly-album-covers.json
 
 目录成功更新后，当地自然日内不再重复刷新；失败至少间隔五分钟重试。图片按当前查看的封面加载和缓存，全部图片通过校验后才替换之前的完整封面。缺图、断网、哈希错误、超限时保留完整旧版本；没有完整缓存时使用原生模板。
 
